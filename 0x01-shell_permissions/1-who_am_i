@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'effectiveusername user:$(whoami)'
+echo 'user:$(whoami)'
