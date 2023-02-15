@@ -1,0 +1,9 @@
+#!/bin/bash
+# Check if an argument was provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 [string to encode/decode]"
+    exit 1
+fi
+# Use tr to perform ROT13 encryption and decryption
+echo "$1" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
